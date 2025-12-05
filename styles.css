@@ -101,15 +101,16 @@ body {
 ================================================== */
 .sidebar {
   background: #dd5656; 
-  padding: 16px;
+  padding: 30px 35px 80px 35px;
   display: flex;
   flex-direction: column;
+  max-width: 300px;
   gap: 20px;
 }
 
 .publicidad {
-  background: #ffe760;
-  padding: 22px;
+  background: #ffd138;
+  padding: 16px 20px 16px 20px;
 }
 
 /* ================================================
