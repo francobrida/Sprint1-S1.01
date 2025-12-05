@@ -1,0 +1,140 @@
+/* ================================================
+   RESET BÁSICO
+================================================== */
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Times New Roman', serif, Helvetica, sans-serif;
+  padding: 20px;
+  text-align: justify;
+  font-size: larger;
+}
+
+/* ================================================
+   CONTENEDOR GENERAL
+================================================== */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #0e0e0e; 
+  box-shadow: 0 0 0 20px #000;  
+  overflow: visible; /* <- CORRECCIÓN */
+}
+
+/* ================================================
+   HEADER
+================================================== */
+.header-inner {
+  background: #3e4364;   
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.logo,
+.nav,
+.social {
+  background: #dd5656;       
+  padding: 12px 90px 12px 12px;
+}
+
+.nav {
+  flex: auto;
+}
+
+/* ================================================
+   BANNER AMARILLO
+================================================== */
+.banner {
+  background: #ffd138; 
+  padding: 10px;
+  border: 20px solid #ff8a00; 
+  font-size: 32px;
+  font-weight: bold;
+  color: #222;
+  margin: 24px auto;
+  margin-bottom: 60px;
+}
+
+/* ================================================
+   MAIN GRID
+================================================== */
+.main-grid {
+  display: grid;
+  grid-template-columns: 1fr 320px; /* izquierda flexible + derecha fija */
+  gap: 24px;
+  margin-top: 20px;
+  margin-bottom: 60px;
+  align-items: stretch; /* <- CORRECCIÓN */
+}
+
+/* ================================================
+   ARTÍCULOS
+================================================== */
+.articles {
+  background: #3e4364; 
+  padding: 25px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 21px;
+}
+
+.article {
+  background: #2e67a5; 
+  padding: 8px;
+}
+
+.navegacion {
+  background: #83a9c9;
+  padding: 12px;
+  grid-column: 1 / -1;
+}
+
+/* ================================================
+   SIDEBAR
+================================================== */
+.sidebar {
+  background: #dd5656; 
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.publicidad {
+  background: #ffe760;
+  padding: 22px;
+}
+
+/* ================================================
+   FOOTER
+================================================== */
+.site-footer {
+  background: #f4eaa0; 
+  padding: 12px;
+  margin-top: 24px;
+}
+
+/* ================================================
+   RESPONSIVE (opcional)
+================================================== */
+/* @media (max-width: 1000px) {
+  .main-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .header-inner {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .nav {
+    width: 100%;
+  }
+} */
