@@ -1,6 +1,4 @@
-/* ================================================
-   RESET BÁSICO
-================================================== */
+
 *{
   box-sizing: border-box;
   margin: 0;
@@ -8,26 +6,19 @@
 }
 
 body {
-  font-family: 'Times New Roman', serif, Helvetica, sans-serif;
+  font-family: 'Times New Roman', Helvetica, sans-serif;
   padding: 20px;
   text-align: justify;
   font-size: larger;
 }
 
-/* ================================================
-   CONTENEDOR GENERAL
-================================================== */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   background: #0e0e0e; 
   box-shadow: 0 0 0 20px #000;  
-  overflow: visible; /* <- CORRECCIÓN */
 }
 
-/* ================================================
-   HEADER
-================================================== */
 .header-inner {
   background: #3e4364;   
   padding: 10px;
@@ -45,12 +36,10 @@ body {
 }
 
 .nav {
-  flex: auto;
+  flex: auto; 
 }
 
-/* ================================================
-   BANNER AMARILLO
-================================================== */
+
 .banner {
   background: #ffd138; 
   padding: 10px;
@@ -62,21 +51,17 @@ body {
   margin-bottom: 60px;
 }
 
-/* ================================================
-   MAIN GRID
-================================================== */
+
 .main-grid {
   display: grid;
-  grid-template-columns: 1fr 320px; /* izquierda flexible + derecha fija */
-  gap: 24px;
+  grid-template-columns: 1fr 320px; 
+  gap: 5px;
   margin-top: 20px;
   margin-bottom: 60px;
-  align-items: stretch; /* <- CORRECCIÓN */
+  align-items: stretch; 
 }
 
-/* ================================================
-   ARTÍCULOS
-================================================== */
+
 .articles {
   background: #3e4364; 
   padding: 25px;
@@ -96,16 +81,14 @@ body {
   grid-column: 1 / -1;
 }
 
-/* ================================================
-   SIDEBAR
-================================================== */
 .sidebar {
   background: #dd5656; 
-  padding: 30px 35px 80px 35px;
+  padding: 30px;
   display: flex;
   flex-direction: column;
   max-width: 300px;
   gap: 20px;
+  margin-left: 30px; 
 }
 
 .publicidad {
@@ -113,29 +96,48 @@ body {
   padding: 16px 20px 16px 20px;
 }
 
-/* ================================================
-   FOOTER
-================================================== */
 .site-footer {
   background: #f4eaa0; 
   padding: 12px;
   margin-top: 24px;
 }
 
-/* ================================================
-   RESPONSIVE (opcional)
-================================================== */
-/* @media (max-width: 1000px) {
-  .main-grid {
-    grid-template-columns: 1fr;
-  }
+@media (max-width: 1024px) {
 
   .header-inner {
     flex-direction: column;
-    align-items: stretch;
   }
 
-  .nav {
-    width: 100%;
+  .main-grid {
+   grid-template-columns: 1fr;
+   gap: 20px;
+
   }
-} */
+
+  .sidebar {
+  margin-left: 0;
+  max-width: none;
+  }
+
+  .logo, .nav, .social {
+  padding: 12px;
+  width: 100%;
+  flex: auto;
+  }
+
+}
+  
+@media (max-width: 767px) {
+  
+  .articles {
+  background: #3e4364; 
+  padding: 25px;
+  grid-template-columns: 1fr;
+  gap: 21px;
+}
+  
+}
+
+
+
+
