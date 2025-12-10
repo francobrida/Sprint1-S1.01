@@ -87,7 +87,7 @@ body {
   display: flex;
   flex-direction: column;
   max-width: 300px;
-  gap: 1px;
+  gap: 10px;
   margin-left: 30px; 
 }
 
